@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curved Background</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .navbar-nav {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar-nav .nav-item {
+            padding: 0 10px;
+        }
+        .navbar-brand {
+            font-size: 1.5rem; 
+        }
+        .dropdown-menu {
+            background-color: #0c6ccb; 
+        }
+        .dropdown-item {
+            color: #ffffff; 
+        }
+        .dropdown-item:hover {
+        
+            background-color: #495057; 
+        }
+        body {
+            margin: 20px;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgb(162, 203, 211);
+        }
+
+        .container {
+            position: relative;
+            overflow: hidden;
+            height: 300px; 
+        }
+
+        .curved-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('worshopbg.jpg'); 
+            background-size: cover;
+            background-position: center;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+            -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            color: #f8f7f7;
+        }
+
+        h1 {
+            margin-top: 50px; 
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: square;
+        }
+        .carousel-item img {
+            width: 90%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <a class="navbar-brand" href="#">INNOVATIVE MINDS OF NATIONS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="workshop.html">Workshop & Lectures</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Awards
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="physics.html">Physics</a>
+                    <a class="dropdown-item" href="chemistry.html">Chemistry</a>
+                    <a class="dropdown-item" href="medicine.html">Medicine</a>
+                    <a class="dropdown-item" href="Literature.html">Literature</a>
+                    <a class="dropdown-item" href="Peace.html">Peace</a>
+                    <a class="dropdown-item" href="economic%20sciences.html">Economic Sciences</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="FAQ's.html">FAQ's</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact%20bootstrap.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login%20b.html">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="signupb.html">Signup</a>
+            </li>
+        </ul>
+    </div>
+    </nav>
+    <div class="container">
+        <div class="curved-bg"></div>
+        <div class="content">
+            <p>Do you want to have a bigger impact with science?</p>
+            <h1>Workshops & lectures on science communication</h1>
+        </div>
+    </div>
+    <marquee behavior="scroll" direction="left">
+        <h2>Invite us to your university (of applied science), institute, PhD day, conference or summer school and we will inspire you and your colleagues or students to get your message across in more attractive, contemporary and effective ways.</h2>
+    </marquee>
+    <ul>
+    <h4><li>Choose between English or Dutch</li>
+        <li>Opt for online or in-house sessions</li>
+        <li>No bullet-points, guaranteed!</li>
+        <li>Suitable for all levels: from PhD students to full professors, and from support staff to seasoned communicators</li></h4>
+    </ul>
+    <center><font size="7" color="darkblue">Choose from our science communication workshops</font>
+      <h4>All our workshops are about science communication. However, for each workshop we chose a different focus: strategic thinking about the basic questions, performing a pitch, telling a story, writing a social media post, creating a presentation, or designing a graphical abstract.</h4>
+      <img src="worshop 1 .jpg">
+    <div class="container mt-3">
+        <font size="6" color="1679AB">IMPACT with science communication</font>
+        <h4>Do you want to have a positive effect on the world? We'll make you thnik about your goal,audience!Also available as a keynote lecture.</h4>
+        
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">
+          READ MORE!!
+        </button>
+      </div>
+      
+     
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+    
+            <div class="modal-header">
+              <h4 class="modal-title">Innovatives</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <div class="modal-body">
+              <h3>Get creative with your science communication for impact!</h3>
+              <p>What do you consider impact? Is it publishing a peer-reviewed paper, and hoping a lot of people will read it? In this workshop we look beyond academia and make you think about your goal, audience and the message you are sending. How do you plan to achieve that people want to pay attention to what you are saying?</p>
+             
+               <h4>"Motivate yourself to get more out of your research!"</h4> 
+                
+               <p> Using short interactive exercises, we help you determine your message and goal (spoiler alert: it’s never just ‘informing’ the public). We then zoom in to help you step into the shoes of your target audience, and teach you what steps you need to take to prevent your message from being misunderstood. We briefly cover all aspects of science communication and how they can contribute to your impact as a scientist. Whether it’s writing a paper, giving a presentation, creating an infographic, being visible on social media, or appearing in a television show.
+                
+                Available as keynote or workshop. If you choose this workshop in a 2-3 hour interactive lecture format you will get creative yourself and design new ways of science communication in smaller groups.</p>
+            </div>
+      
+            
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+      <img src="worshop 2.jpg">
+     
+      <div class="container mt-3">
+        <font size="6" color="1679AB">Pitch your science to any audience</font>
+        <h4>By understanding your audience and aligning your message to their needs, you can really get your point across.In this workshop you'll create a short pitch or article to practice just that.</h4>
+
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">
+          READ MORE!!
+        </button>
+      </div>
+    
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <div class="modal-header">
+              <h4 class="modal-title">Innovatives</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <div class="modal-body">
+              <h3>Learn how to engage your audience effectively</h3>
+              <p>Writing a short pitch or article is often the best start to any kind of science communication. To help you get on with this, we aim this workshop at defining your message, goal and target audience. But we will also cover some ways to formulate your message clearly, and explain why this is so important. This workshop helps you to communicate with your peers, but also with subsidy organizations, policy makers or a wider audience.</p>
+             
+              <h4>"Create a pitch to blow away any audience!"</h4> 
+                
+               <p>You’ll learn how to really understand your target audience, and to adapt your message for optimal communication with them. The end product is a short pitch/article. Of course, you could also use this text as the stepping stone for something much larger..</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+        </div>
+        <img src="worshop 3.jpg">
+        <div class="container mt-3">
+            <font size="6" color="1679AB">Science and the media</font>
+            <h4>Do you want to be more confident around journalists or the media? Or do you want to take advantage of the opportunites that social media offer for scientists?  We'll get you started!</h4>
+            
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">
+              READ MORE!!
+            </button>
+          </div>
+        
+          <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <div class="modal-header">
+                  <h4 class="modal-title">Innovatives</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <div class="modal-body">
+                  <h3>How to engage media with confidence</h3>
+                  <p>Like it or not: (social) media are becoming an integral part of scientific success. This workshop will help you understand how the media work, and how you can use them to your advantage. It’s also very useful for scientists who want to prepare for interviews with journalists, and for those who want to use social media to showcase their work we include a section on the various social media and how you can use them creatively for science communication.</p>
+                  
+                   <h4>"Understanding (social) media and using them to your advantage"</h4> 
+                 </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+            </div>
+
+      </center>
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+       <center>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="courousel1.jpg" height="450" width="400" alt="Los Angeles">
+            </div>
+            <div class="carousel-item">
+                <img src="courousel2.jpg" height="450" width="400" alt="Chicago">
+            </div>
+            <div class="carousel-item">
+                <img src="courousel3.jpg"height="450"  width="400" alt="New York">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    </center
+    
+<div class="container mt-3">
+    <font size="6"><i>COMMENTS:</i></font>
+    <div class="d-flex p-3 bg-light text-white">  
+      <div class="p-2 bg-secondary">❝The success of my poster and my pitch is the result of what I learned in your extraordinary workshop. The outcome was exactly what I wanted.I couldn’t ask for more! THANK YOU!!!❞</div>
+      <div class="p-2 bg-secondary">❝Our research team enjoyed the IMPACT workshop very much! We learned how we can create more impact with our research by thinking one step further. An interactive workshop with a lot of positive energy!❞</div>
+      <div class="p-2 bg-secondary">❝Last week I received the “1st Excellence Poster Award” at the 10th Manufacturing Engineering Society International Conference (out of 100 posters!!). I would like to thank you for the help with the work and for planning a great course!❞</div>
+    </div>
+  </div>
+  <center>
+<a href="index.html">RETURN TO HOME</a>
+</center>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

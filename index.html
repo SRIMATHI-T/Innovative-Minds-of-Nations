@@ -1,0 +1,226 @@
+<?php
+
+session_start();
+if(!isset($_SESSION['UserName']))
+{
+  header('location:signupb.html');
+
+}
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovatie minds of nations</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .navbar-nav {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar-nav .nav-item {
+            padding: 0 10px;
+        }
+        .navbar-brand {
+            font-size: 1.5rem; 
+        }
+        .dropdown-menu {
+            background-color: #0c6ccb; 
+        }
+        .dropdown-item {
+            color: #ffffff; 
+        }
+        .dropdown-item:hover {
+        
+            background-color: #495057; 
+        }
+        body {
+            background-image: url('bootstrap image.jpg');
+            background-size: cover;
+            margin: 20px;
+        }
+        .jumbotron {
+            background-color: rgba(247, 243, 243, 0.87);
+        }
+        h2, h3 {
+            color: darkmagenta;
+        }
+        .col-sm-4 {
+            margin-bottom: 20px;
+        }
+        .col-sm-4  {
+            font-size: 20px;
+        }
+       p {
+        font-size: 20px;
+        }
+        footer {
+                background-color: #00205b;
+                color: #fff;
+                text-align: center;
+                padding: 20px 0;
+                box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+            }
+    
+            footer p {
+                font-size: 14px;
+            }
+    
+            .social-icons {
+                margin-top: 20px;
+            }
+    
+            .social-icons a {
+                color: #fff;
+                font-size: 24px;
+                margin: 0 10px;
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+    
+            .social-icons a:hover {
+                color: #ffc300;
+            }
+    </style>
+</head>
+<body>
+    <h1>WELCOME,<?php echo$_SESSION['UserName'];?></h1>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <a class="navbar-brand" href="#">INNOVATIVE MINDS OF NATIONS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="workshop.html">Workshop & Lectures</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Awards
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="physics.html">Physics</a>
+                        <a class="dropdown-item" href="chemistry.html">Chemistry</a>
+                        <a class="dropdown-item" href="medicine.html">Medicine</a>
+                        <a class="dropdown-item" href="Literature.html">Literature</a>
+                        <a class="dropdown-item" href="Peace.html">Peace</a>
+                        <a class="dropdown-item" href="economic%20sciences.html">Economic Sciences</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="FAQ's.html">FAQ's</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact bootstrap.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login b.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signupb.html">Signup</a>
+                </li>
+            </ul>
+        </div>
+    </nav><center><br>
+    <h3 class='mt-5'>
+    HELLO! <?php echo $_SESSION['UserName']; ?>
+
+    </h3>
+   <h2 style="color:darkmagenta;"> Increase your impact with strategic and creative science communication!</h2></center>
+   <br><br>
+   <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <h4>We help you take your ideas to the next level and we realize them by creating unique websites, infographics, animated videos, & scrollytelling campaigns.</h4>
+        <h5>We can also teach you (and your colleagues) how to become better science communicators with one of our workshops.</h5>
+        <a href="contact%20bootstrap.html">GET IN TOUCH ABOUT YOUR PROJECT!</a>
+       <br><br> <p>Liesbeth and Stephan master the art of clearly presenting complex concepts.
+            Their work on infographics and websites for my projects has made my activities and projects more meaningful for use in schools on a daily basis.</p>
+      </div>
+      <div class="col-sm-4">
+       <img src="bootstrap image 1.png"width="300">
+      </div><div class="col-sm-4">
+        <h3>For researchers at every step of their career:</h3>  <br>
+        <h2>PHD</h2>
+        Do you want your (poster) presentation to get noticed? Book our<a href="workshop.html"> workshops</a> for your PhD retreat or department.    
+        <br><br>Create true impact by working with us on your oration and presentations, or let us help you prepare for the media.
+      </div>
+    </div>
+  </div><br>
+  <div class="jumbotron text-center" style="background-color:rgba(247, 243, 243, 0.87);">  
+    <h3>See how we work by reading about three scientists and their requests for science communication:</h3>
+    </div>
+    <br><center><h3 style="color:darkmagenta;">1.It starts with a scientist’s question </h3><br><br>
+        <div class="container"></center>
+        <div class="row">
+          <div class="col-sm-4">
+            <h4> Science communication</h4>
+            <p>I take part in an EU research project or received<br> a grant for my work. How do inform our<br> public about the research?</p>
+          </div>
+          <div class="col-sm-4">
+            <h4> Impact on society</h4>
+            <p>I would like to inspire decision makers with my <br> newest research findings. How do I tell my<br> story to maximize the chances of making an <br>impact on society?</p>
+          </div>
+          <div class="col-sm-4">
+            <h4>Presentation</h4>        
+            <p>I have to give an important lecture.<br> How do I write my story and make my presentation,<br> so that I will be the talk of the day?
+      </p>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <center><h4 style="color:darkmagenta;">2.Discuss your project with The Online Scientist</h4><br>
+        <p>And benefit from over ten years of experience in science communication<br>
+            We have dedicated our careers to science communication, and worked with a wide variety of scientists with all kinds of goals.<br> So when you come to us with your question we help you with the most time- and cost-effective solution for your project, while making sure that the science stays accurate.</p>
+    <br><br>
+    <h4 style="color:darkmagenta;">3. A result to be proud of</h4><br><br>
+    <div class="container"></center>
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="bootstrap 1.jpg"width="300"><br>
+          <br>  <h4>Website & animated video for a research group</h4>
+            <p>Prof. Michel Vols received an ERC Starting Grant and wanted to showcase his research and team, and to build a network with other researchers. In other words, he wanted a website that could invite other researchers to work with him on his important research.
+               <br><br> We build a unique website for him with a blog functionality and a team page <a href="https://www.eviction.eu/">eviction.eu.</a> There they frequently post updates on the latest research. We also created an animated video that tells the story of what their research is trying to achieve. And of course we also created a presentation template for a professional look.</p>
+          </div>
+          <div class="col-sm-4">
+            <img src="bootstrap 2.jpg"width="300"><br>
+            <br><h4>Infographic & scrollytelling website campaign</h4>
+            <p>We’ve worked with dr. Famke Mölenberg before to create engaging infographics and videos. This time, Famke wanted to create more impact with her research on the effects of second-hand smoking in children.
+            <br><br> Her aim was to activate policymakers, so we created a campaign to show the evidence and benefits of banning smoking from cars with children in it.
+            <br><br>We helped to write a story and created an infographic that captured the essence of her research. We also sponsored a scrollytelling website (rijrookvrij.nl) and social media cards. It resulted in a letter to parliament and ongoing efforts to make this legislation possible.</p>
+                </div>
+          <div class="col-sm-4">
+            <img src="bootstrap3.jpg"width="300"><br>
+           <br><h4>Writing & design for a professor’s farewell address</h4>        
+            <p>For every scientist, also the highly regarded profs, there comes a time to say goodbye when they retire. Prof. René Bindels was no exception, and he had a nice parting event to look forward to. But even with all his experience giving lectures and presentations, René realized that his farewell lecture should be a different one.
+             <br><br>He wanted to make impact with a story that was both reflective and insightful, one that had something to offer to his family, but also his academic peers. We worked with him to shape his story as well as the presentation slides, and the result is a clear presentation that earned him a huge applause.
+      </p>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>&copy; 2024 Innovative minds of nations. All rights reserved. | Address: 123 indhra  Street, Stockholm | Email: innovative@nobelprize.com</p>
+        <div class="social-icons">
+            <a href="https://whatsapp.com"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <?php
+        $HOSTNAME='localhost';
+        $USERNAME='csed16';
+        $PASSWORD='csed16';
+        $DATABASE='csed16';
+        $con=mysqli_connect($HOSTNAME,$USERNAME,$PASSWORD,$DATABASE);
+        if($con)
+        {
+            echo"Connection Successful";
+        }else{
+            die(mysqli_error($con));
+        }
+        ?>
+    </body>
+</html>
