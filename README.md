@@ -19,6 +19,12 @@ This project includes several HTML files and associated assets to create a multi
 - **Sign-Up Page:** A user registration form that handles user input and displays success or failure messages based on the database response.
 - **Workshops & Lectures:** Details on various science communication workshops with modal pop-ups for additional information and a carousel for images.
 
+**View the page**
+
+![T.php](t.png)
+
+![T.php](t.png)
+
  *Steps to Run our code:* 
  
 1. Clone our repository
@@ -27,7 +33,12 @@ This project includes several HTML files and associated assets to create a multi
 4. View the code in any Text Editor
 5. Open index.html in a Web Browser
 
+**Benefits**
 
+*  Educational Resource: Provides valuable insights into the Nobel Prize in Physics and science communication.
+*  Interactive Elements: Features user registration forms and engaging content about workshops and lectures.
+*  Modern Design: Utilizes Bootstrap 5 for a responsive and visually appealing user interface.
+ 
 **Our Vision**
 
 We aim to enhance public understanding of science through engaging workshops and informative lectures. By fostering innovation and communication in the scientific community, we seek to inspire curiosity and learning about the Nobel Prize in Physics and related scientific fields.
