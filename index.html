@@ -1,13 +1,4 @@
-<?php
 
-session_start();
-if(!isset($_SESSION['UserName']))
-{
-  header('location:signupb.html');
-
-}
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -132,10 +123,7 @@ if(!isset($_SESSION['UserName']))
             </ul>
         </div>
     </nav><center><br>
-    <h3 class='mt-5'>
-    HELLO! <?php echo $_SESSION['UserName']; ?>
-
-    </h3>
+    
    <h2 style="color:darkmagenta;"> Increase your impact with strategic and creative science communication!</h2></center>
    <br><br>
    <div class="container">
@@ -209,7 +197,7 @@ if(!isset($_SESSION['UserName']))
         </div>
       </div>
       <footer>
-        <p>&copy; 2024 Innovative minds of nations. All rights reserved. | Address: 123 indhra  Street, Stockholm | Email: innovative@nobelprize.com</p>
+        <p>&copy; 2024 Innovative minds of nations. All rights reserved. </p>
         <div class="social-icons">
             <a href="https://whatsapp.com"><i class="fab fa-whatsapp"></i></a>
             <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
