@@ -21,9 +21,11 @@ This project includes several HTML files and associated assets to create a multi
 
 **View the page**
 
-![T.php](t.png)
+![T.php](gitpro-1.jpg)
 
-![T.php](t.png)
+![T.php](gitpro-2.jpg)
+
+![T.php](gitpro-3.jpg)
 
  *Steps to Run our code:* 
  
